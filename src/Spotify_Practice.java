@@ -38,7 +38,7 @@ public class Spotify_Practice {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(searchText).pause(1000).click(searchText).pause(1000).sendKeys(searchText, "zaroorat").perform();
 		
-		WebElement songPic = driver.findElement(By.xpath("//div[@data-testid='herocard-click-handler']"));
+		WebElement songPic = driver.findElement(By.xpath("//div[@aria-rowindex='1']"));
 		File tempFile = songPic.getScreenshotAs(OutputType.FILE);
 		File permFile = new File("./song_screenShot/"+ timeStamp + "zaroorat.png");
 		FileUtils.copyFile(tempFile, permFile);
