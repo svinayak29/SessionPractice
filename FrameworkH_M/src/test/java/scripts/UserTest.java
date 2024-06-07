@@ -13,6 +13,7 @@ public class UserTest extends BaseClass {
 		home.action(gUtil, "Divided", "left", 0.75);
 		addToCart.proceedToCartDry();
 		shoppingBag.validateDryProd(gUtil, "2");
+		//Hello
 	}
 	
 }
